@@ -61,35 +61,34 @@ header:hover .fas{
      width: 100%;
  }
  /* highlights part start */
- .highlight-container{
-     margin:5% 10% 5% 20%;
+ .common-container{
+     margin:5% 10% 5% 15%;
      display: grid;
      grid-template-columns: repeat(3,1fr);
      grid-row-gap: 20px;
      grid-column-gap: 10px;
-     
  }
  .title{
      font-size: 30px;
      color:rgb(66, 0, 173) ;
      text-align: center;
  }
- .highlight-item{
+ .common-item{
     width: 75%;
     /* height: 470px; */
     flex-direction: column;
     padding: 30px;
  }
- .highlight-item:hover{
+ .common-item:hover{
      transform:scale(1.03);
      transition: transform .5s;
      box-shadow: 10px 10px 40px rgb(219, 218, 218);
 
  }
- .highlight-item img{
+ .common-item img{
      width: 100%;
  }
- .highlight-item h2{
+ .common-item h2{
      text-decoration: none;
  }
  /* sponsors part start */
@@ -138,8 +137,32 @@ header:hover .fas{
         width: 90%;
         font-size: 40px;
     }
-    .football-shoot{
-        margin: 400px 0 0 -70px;
+    .players-container, .highlight-container{
+        display: grid;
+        grid-template-columns:repeat(1 ,1fr);
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .title{
+        font-size: 20px;
+        text-align:left;
+    }
+    .sponsor-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
+
+@media only screen and (max-width:480px) {
+    header{
+        width: 100%;
+        font-size: 40px;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .main-header{
+        width: 100%;
     }
     .players-container, .highlight-container{
         display: grid;
@@ -154,9 +177,7 @@ header:hover .fas{
     .sponsor-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-    }
-    
-   
+    }  
 }
 /* Tablet Devicec */
 /* @media only screen and (min-width:688px) and (max-width:992px) {
